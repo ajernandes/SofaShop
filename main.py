@@ -66,6 +66,8 @@ class Sofa(pygame.sprite.Sprite):
 def run_game():
     pygame.init()
     pygame.font.init()
+    pygame.mixer.music.load('8-bit.mp3')
+    pygame.mixer.music.play(0)
     screen = pygame.display.set_mode((400, 640))
     pygame.mouse.set_cursor((8,8),(0,0),(0,0,0,0,0,0,0,0),(0,0,0,0,0,0,0,0))
     pygame.display.set_caption("SofaShop")
