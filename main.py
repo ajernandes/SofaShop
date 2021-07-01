@@ -133,7 +133,7 @@ def run_game():
 
         counterFont = pygame.font.SysFont("Arial", 14)
         text = counterFont.render("Curtains Matched: " + str(sofaCounter), True, (0,0,0))
-        screen.blit(text, dest=(380,10))
+        screen.blit(text, dest=(290,10))
 
         pygame.display.flip()
         clock.tick(60)
