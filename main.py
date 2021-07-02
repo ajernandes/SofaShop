@@ -77,6 +77,8 @@ def run_game():
     clock = pygame.time.Clock()
     counter = 0
     sofaCounter = 0
+    level = 1
+    levelSofaCounter = 0
     running = True
     playing = True
     curtains = pygame.sprite.Group()
@@ -100,8 +102,12 @@ def run_game():
             if collide:
                 if sofa.sprites()[0].color == curtain.color:
                     sofaCounter += 1
+                    levelSofaCounter += 1
                     curtains.remove(curtain)
                     sofa.sprites()[0].newColor()
+                    if levelSofaCounter == level ** 2 + level + 6:
+                        levelSofaCounter = 0
+                        level += 1
                 else:
                     playing = False
                     curtains.empty()
@@ -116,7 +122,7 @@ def run_game():
             except (IndexError):
                 continue
 
-        while not playing:
+        while not playing: #this is when you are dead
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     return
@@ -124,12 +130,14 @@ def run_game():
             screen.fill((255, 0, 0))
             
             deadFont = pygame.font.SysFont("Arial", 20)
-            deadFontsub = pygame.font.SysFont("Arial", 20)
+            deadFontsub = pygame.font.SysFont("Arial", 14)
             text = deadFont.render("You did not ♫ match your curtains too ♫", True, (0,0,0))
             subtext = deadFontsub.render("Final Score: " + str(sofaCounter), True, (0,0,0))
+            finalLevel = deadFontsub.render("Final Level: " + str(level), True, (0,0,0))
 
             screen.blit(text, dest=(55,320))
             screen.blit(subtext, dest=(55,350))
+            screen.blit(finalLevel, dest=(55,380))
             pygame.display.flip()
             clock.tick(60)
         
@@ -139,7 +147,9 @@ def run_game():
 
         counterFont = pygame.font.SysFont("Arial", 14)
         text = counterFont.render("Curtains Matched: " + str(sofaCounter), True, (0,0,0))
-        screen.blit(text, dest=(290,10))
+        levelDisp = counterFont.render("Level: " + str(level), True, (0,0,0))
+        screen.blit(text, dest=(285,10))
+        screen.blit(levelDisp, dest=(285,25))
 
         pygame.display.flip()
         clock.tick(60)
