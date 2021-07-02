@@ -73,7 +73,7 @@ def run_game():
         print("Issue with music, skipping...")
     screen = pygame.display.set_mode((400, 640))
     pygame.mouse.set_cursor((8,8),(0,0),(0,0,0,0,0,0,0,0),(0,0,0,0,0,0,0,0))
-    pygame.display.set_caption("SofaShop")
+    pygame.display.set_caption("Sofa Shop - The Game")
     clock = pygame.time.Clock()
     counter = 0
     sofaCounter = 0
