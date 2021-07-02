@@ -6,7 +6,7 @@
 Move your mouse left to right to match the sofa to the curtains. Future plans can be found below.
 <h2>Installation</h2>
 Sofa Shop - The Game is created in <a href="https://www.python.org">Python</a> using <a href="https://www.pygame.org/">Pygame</a>. <a href="https://www.pygame.org/wiki/GettingStarted"> <br>
-Here</a> is a link to the Pygame Instiliation instructions. <br>
+Here</a> is a link to the Pygame installation instructions. <br>
 Once pygame is installed, download the game files from <a href="https://www.github.com/ajernandes/SofaShop">GitHub</a>.<br>
 In the top right corner, click on the green <b>Code</b> button, and select <b>Download ZIP</b> at the bottom. <br>(If you are familiar with git, that will also work)<br>
 <img src="https://cdn.discordapp.com/attachments/801812172627640321/860335944561197086/unknown.png"><br>
