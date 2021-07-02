@@ -124,9 +124,12 @@ def run_game():
             screen.fill((255, 0, 0))
             
             deadFont = pygame.font.SysFont("Arial", 20)
+            deadFontsub = pygame.font.SysFont("Arial", 20)
             text = deadFont.render("You did not ♫ match your curtains too ♫", True, (0,0,0))
+            subtext = deadFontsub.render("Final Score: " + str(sofaCounter), True, (0,0,0))
 
             screen.blit(text, dest=(55,320))
+            screen.blit(subtext, dest=(55,350))
             pygame.display.flip()
             clock.tick(60)
         
