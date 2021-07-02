@@ -12,10 +12,7 @@ In the top right corner, click on the green <b>Code</b> button, and select <b>Do
 <img src="https://cdn.discordapp.com/attachments/801812172627640321/860335944561197086/unknown.png"><br>
 Once you have downloaded the zip file, you need to extract it, and open the folder contained inside of it.<br>
 Next, we need to open this file inside of the terminal. This can generally be done by right clicking the folder, depending on your operation system. Google is your friend.<br>
-Once you have the folder opened inside of your terminal, type <code>python3 main.py</code>. If you get an issue referring to a libmpg123-0.dll file, restart your computer. If that does not work, remove the following two lines of code:
-<code>pygame.mixer.music.load('8-bit.mp3')<br>
-pygame.mixer.music.play(0)</code><br>
-This will mean that there will be no music, which is sad.
+Once you have the folder opened inside of your terminal, type <code>python3 main.py</code>. If you do not hear the music, try restarting your computer.<br>
 <h2>Future Plans</h2>
 <ul>
 <li>Add a title screen</li>
