@@ -67,7 +67,7 @@ def run_game():
     pygame.init()
     pygame.font.init()
     pygame.mixer.music.load('8-bit.mp3')
-    pygame.mixer.music.play(0)
+    pygame.mixer.music.play(-1)
     screen = pygame.display.set_mode((400, 640))
     pygame.mouse.set_cursor((8,8),(0,0),(0,0,0,0,0,0,0,0),(0,0,0,0,0,0,0,0))
     pygame.display.set_caption("SofaShop")
@@ -133,7 +133,7 @@ def run_game():
 
         counterFont = pygame.font.SysFont("Arial", 14)
         text = counterFont.render("Curtains Matched: " + str(sofaCounter), True, (0,0,0))
-        screen.blit(text, dest=(380,10))
+        screen.blit(text, dest=(290,10))
 
         pygame.display.flip()
         clock.tick(60)
