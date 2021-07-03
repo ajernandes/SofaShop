@@ -111,7 +111,6 @@ def run_game():
                         levelSofaCounter = 0
                         level += 1
                 else:
-                    #continue
                     playing = False
                     curtains.empty()
                     sofa.empty()
@@ -119,10 +118,6 @@ def run_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
-            #elif event.type == pygame.MOUSEBUTTONDOWN:
-            #    level +=1
-            #elif event.type == pygame.KEYDOWN:
-            #    level -=1
             try:
                 if event.type == pygame.MOUSEMOTION:
                     sofa.sprites()[0].update()
