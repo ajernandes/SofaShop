@@ -12,8 +12,8 @@ On the right side, click on the latest release<br>
 <img src="https://cdn.discordapp.com/attachments/801812172627640321/860522841471844362/unknown.png"><br>
 And then click on <b>Source code (zip)</b> at the bottom.<br>
 <img src="https://cdn.discordapp.com/attachments/801812172627640321/860522938255278080/unknown.png"><br>
-<table css="border:1px solid white;">
-<tr css="border:1px solid white;">
+<table css="border:1px solid black;">
+<tr>
 <td css="border:1px solid white;">
 Alternatively, to download the latest features, in the top right corner, click on the green <b>Code</b> button, and select <b>Download ZIP</b> at the bottom. <br>(If you are familiar with git, that will also work)<br>
 <img src="https://cdn.discordapp.com/attachments/801812172627640321/860335944561197086/unknown.png"><br>
