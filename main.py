@@ -90,7 +90,7 @@ def run_game():
     while running:
         counter += 1
         if (playing):
-            if (counter % 50) == 0:
+            if (counter % 50 / level ** (1 / 3)) == 0:
                 curtains.add(Curtains((random.randint(20, 400), 0), screen))
             curtains.update()
 
