@@ -26,7 +26,7 @@ Once you have the folder opened inside of your terminal, type <code>python3 main
 <h2>Future Plans</h2>
 <ul>
 <li>Add a title screen</li>
-<li>Add levels, with increasing difficulty as levels get higher</li>
+<li><del>Add levels, with increasing difficulty as levels get higher</del> <b>Completed</b></li>
 <li>Add more Unmade Podcast references</li>
 <li>Final boss?</li>
 <li>Feel free to let me know of any suggestions by opening an issue on GitHub</li>
