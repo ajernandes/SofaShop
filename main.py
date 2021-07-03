@@ -91,9 +91,12 @@ def run_game():
     while running:
         counter += 1
         if (playing):
-            if (counter % (80 - int(level ** (1 / 5) - 5.5))) == 0:
+            if (counter % (100 - int(level ** (1 / 5) - 5.5))) == 0:
                 w, h = pygame.display.get_surface().get_size()
                 curtains.add(Curtains((random.randint(0, w), 0), screen))
+                if level > 5:
+                    for x in range(round(level ** 1/10)):
+                        curtains.add(Curtains((random.randint(0, w), 0), screen))
             curtains.update()
 
         for curtain in curtains:
@@ -107,7 +110,7 @@ def run_game():
                     levelSofaCounter += 1
                     curtains.remove(curtain)
                     sofa.sprites()[0].newColor()
-                    if levelSofaCounter == level ** 1/2:
+                    if levelSofaCounter == level ** 2 - level + 2:
                         levelSofaCounter = 0
                         level += 1
                 else:
@@ -158,7 +161,7 @@ def run_game():
         screen.blit(levelDisp, dest=(w*.9,25))
 
         pygame.display.flip()
-        clock.tick(60 + level ** 2)
+        clock.tick(60 + (sofaCounter + 4) ** 3)
 
 
 run_game()
