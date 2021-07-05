@@ -25,7 +25,7 @@ Next, we need to open this file inside of the terminal. This can generally be do
 Once you have the folder opened inside of your terminal, type <code>python3 main.py</code>. If you do not hear the music, try restarting your computer.<br>
 <h2>Future Plans</h2>
 <ul>
-<li>Add a title screen</li>
+<li><del>Add a title screen</del> <b>Completed</b></li>
 <li><del>Add levels, with increasing difficulty as levels get higher</del> <b>Completed</b></li>
 <li>Add more Unmade Podcast references</li>
 <li>Final boss?</li>
